@@ -3,6 +3,7 @@ module.exports = {
     title: "Moon Jar Studio",
     description: "Illuminating worlds through the magic of play",
     author: "yoonsie",
+    siteUrl: "https://moonjarstudio.com",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
