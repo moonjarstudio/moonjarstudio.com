@@ -3,7 +3,11 @@ name: Deploy Gatsby to GitHub Pages
 on:
   push:
     branches:
-      - main  # or whatever your default branch is
+      - main
+    paths:
+      - "src/**"
+      - "gatsby-config.js"
+      - "package.json"
 
 jobs:
   build:
