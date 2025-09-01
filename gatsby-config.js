@@ -43,8 +43,8 @@ module.exports = {
 
     // Other Gatsby plugins
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
+    // "gatsby-plugin-image",
+    // "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",

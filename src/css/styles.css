@@ -1,20 +1,18 @@
 html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;    /* Center vertically */
   font-family: "Pixelify Sans", serif;
   font-optical-sizing: auto;
+  /* background-color: red; */
 }
 
+/*
 div.container {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
-  align-items: center;    /* Center elements horizontally */
-}
+  /* align-items: center;    /* Center elements horizontally */
+/* }  */
 
-img.center {
+
+/* img.logo {
    margin: 0 auto;
    display: block;
- }
+ } */
