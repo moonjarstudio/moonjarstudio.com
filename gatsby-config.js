@@ -6,11 +6,46 @@ module.exports = {
     siteUrl: "https://moonjarstudio.com",
   },
   plugins: [
+    // Filesystem plugins must come first
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `${__dirname}/src/assets/img`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: `${__dirname}/content/blog/`,
+      },
+    },
+
+    // MDX v3 configuration - this is the key change
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          // Add any remark plugins you need here
+        ],
+        mdxOptions: {
+          remarkPlugins: [
+            // Add remark plugins here if needed
+          ],
+          rehypePlugins: [
+            // Add rehype plugins here if needed
+          ],
+        },
+      },
+    },
+
+    // Other Gatsby plugins
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
     {
@@ -22,14 +57,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#ffffff",
         display: "standalone",
-        icon: "static/img/favicon/favicon.png", //i put static in path, chatgpt lied
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/assets/img`,
+        icon: "static/img/favicon/favicon.png", // path relative to root
       },
     },
   ],
