@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmoonjarstudio=self.webpackChunkmoonjarstudio||[]).push([[245],{2783:function(n,e,o){o.r(e),o.d(e,{default:function(){return u}});var t=o(6540);function u(){return t.createElement("h1",null,"Welcome to Moonjar Studio")}}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-a031e19fe1b770c9093e.js.map
