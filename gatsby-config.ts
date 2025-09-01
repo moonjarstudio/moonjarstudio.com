@@ -9,7 +9,22 @@ const config: GatsbyConfig = {
   // If you use VSCode you can also use the GraphQL plugin
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
-  plugins: ["gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap",
+
+  // "gatsby-plugin-google-gtag"
+  // {
+  //   resolve: 'gatsby_plugin-google-gtag',
+  //   options: {
+  //     trackingIds: [
+  //       "G-83EBW791H6", // Replace with your GA tracking ID
+  //     ],
+  //     gtagConfig: {
+  //       anonymize_ip: true,
+  //       cookie_expires: 0,
+  //     },
+  //   }
+  // },
+  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
