@@ -28,7 +28,7 @@ const IndexPage: React.FC = () => {
             alt="pixel art of Korean moon jar"
           />
           <h1 className={styles.studioName}>moon jar studio</h1>
-          <sub>illuminating worlds through the magic of play</sub>
+          <sub className={styles.sub}>illuminating worlds through the magic of play</sub>
           <div className={styles.nav}>
             <span className={styles.navItem}><a className={styles.navLink} href="#">purpose</a></span>
             <span className={styles.navItem}><a className={styles.navLink}  href="#">craft</a></span>

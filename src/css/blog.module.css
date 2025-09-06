@@ -1,0 +1,70 @@
+/* html, body {
+  font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto; */
+  /* background-color: red; */
+/* } */
+
+.blogPosts {
+  /* background-color: red; */
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  max-width: 700px;   /* keeps text from going too wide */
+  margin: 0 auto;     /* centers the content */
+  padding: 2rem 1rem; /* breathing room around the page */
+}
+
+.article {
+  /* background-color: red; */
+  padding: 10px;
+  border: 1px solid #a8b3c2;
+}
+
+.postLink, .description, .date {
+  text-decoration: none;
+}
+
+.description {
+  color: gray;
+}
+
+.article:hover {
+  background-color: #a8b3c2;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); */
+  /* transform: translateY(-1px); /* slight lift effect */
+}
+.pageTitle {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #5e6c82;
+}
+
+.postTitle {
+  font-size: 1.2rem;
+  color: #5e6c82;
+}
+
+
+
+.date {
+  color: #ccc;
+}
+
+.postTitle a:hover {
+  color: #a8b3c2;
+}
+
+/*
+div.container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  /* align-items: center;    /* Center elements horizontally */
+/* }  */
+
+
+/* img.logo {
+   margin: 0 auto;
+   display: block;
+ } */
