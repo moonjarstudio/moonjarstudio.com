@@ -1,0 +1,46 @@
+/* html, body {
+  font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto; */
+  /* background-color: red; */
+/* } */
+.pageTitle {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #5e6c82;
+}
+
+.visionContainer {
+  /* background-color: red; */
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  max-width: 700px;   /* keeps text from going too wide */
+  margin: 0 auto;     /* centers the content */
+  padding: 2rem 1rem; /* breathing room around the page */
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  letter-spacing: .01rem;
+}
+
+.visionContainer img {
+  display: block;       /* Make it a block element */
+   margin: 1rem auto;    /* Center horizontally with auto left/right margins */
+   max-width: 100%;      /* Make sure image is responsive */
+   height: auto;         /* Keep aspect ratio */
+}
+
+.studioName {
+  color: #5e6c82;
+  font-weight: 600;
+  letter-spacing: -.02rem;
+}
+
+.about {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: #5e6c82;
+}

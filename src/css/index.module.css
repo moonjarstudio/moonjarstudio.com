@@ -1,6 +1,7 @@
 .homePage {
-   height: 100vh;
-   margin: 0;
+   height: auto;
+   margin-top: 5rem;
+   /* min-height: 100vh; */
    display: flex;
    justify-content: center;
    /* padding-top: 10rem; */
@@ -30,25 +31,4 @@
  .logo {
    margin: 0 auto;
    display: block;
- }
-
- .nav {
-   margin-top: 1.5rem;
-   font-size: 20px;
- }
-
- .navItem {
-   margin: 5px;
-   padding: 5px;
-   border: 1px solid #8b9bb6;
- }
-
-/* Discover the beautiful Tempest Hues color palette featuring cadet blue (#a8b3c2), bali hai (#8b9bb6), shuttle gray (#5e6c82), trout (#4b5062) and charade (#2c2e3a). */
- .navLink {
-   text-decoration: none;
-   color: #5e6c82;
- }
-
- .navLink:hover {
-   color: #8b9bb6;
  }

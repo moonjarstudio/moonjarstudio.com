@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import * as styles from "../css/blog.module.css"
 import { Helmet } from "react-helmet"
+import Navbar from "../components/navbar.jsx"
 
 const BlogPage = ({ data }) => {
   const posts = data.allMdx.nodes
@@ -19,17 +20,23 @@ const BlogPage = ({ data }) => {
       <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Orbitron:wght@400..900&family=VT323&display=swap" rel="stylesheet" />
     </Helmet>
     {/* Main content */}
+    <Navbar />
     <div className={styles.blogPosts}>
       <h1 className={styles.pageTitle}>Blog Posts</h1>
       {posts.map(post => (
-        <Link className={styles.postLink} to={`/blog/${post.frontmatter.slug}`}  aria-label={`Read blog post: ${post.frontmatter.title}`}>
-        <article className={styles.article} key={post.id}>
-          <h2 className={styles.postTitle}>
+        <Link
+          key={post.id}  // Move key here
+          className={styles.postLink}
+          to={`/blog/${post.frontmatter.slug}`}
+          aria-label={`Read blog post: ${post.frontmatter.title}`}
+        >
+          <article className={styles.article}>  {/* Remove key from here */}
+            <h2 className={styles.postTitle}>
               {post.frontmatter.title}
-          </h2>
-          <p className={styles.date}>{post.frontmatter.date}</p>
-          <p className={styles.description}>{post.frontmatter.description}</p>
-        </article>
+            </h2>
+            <p className={styles.date}>{post.frontmatter.date}</p>
+            <p className={styles.description}>{post.frontmatter.description}</p>
+          </article>
         </Link>
       ))}
     </div>
