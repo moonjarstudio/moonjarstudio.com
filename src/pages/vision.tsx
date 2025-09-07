@@ -32,6 +32,9 @@ const VisionPage = ({ data }) => {
           We envision a world where tools are tailored to the unique way that our brains learn and engage with different worlds. A world where all ages can experimentally learn and fail, where the default is a growth mindset, where learning is playing and playing is living.
         </p>
       <h2 className={styles.about}>About</h2>
+      <p className={styles.p}>
+        We are a small team of two creators.
+      </p>
     </div>
     </>
   )
